@@ -1,0 +1,192 @@
+:root {
+    --grey-shine: #aaa 1px 0px 0px, #aaa 0.540302px 0.841471px 0px, #aaa -0.416147px 0.909297px 0px, #aaa -0.989992px 0.14112px 0px, #aaa -0.653644px -0.756802px 0px, #aaa 0.283662px -0.958924px 0px, #aaa 0.96017px -0.279415px 0px;
+    --white-shine: white 1px 0px 0px, white 0.540302px 0.841471px 0px, white -0.416147px 0.909297px 0px, white -0.989992px 0.14112px 0px, white -0.653644px -0.756802px 0px, white 0.283662px -0.958924px 0px, white 0.96017px -0.279415px 0px;
+    --black-shine: black 1px 0px 0px, black 0.540302px 0.841471px 0px, black -0.416147px 0.909297px 0px, black -0.989992px 0.14112px 0px, black -0.653644px -0.756802px 0px, black 0.283662px -0.958924px 0px, black 0.96017px -0.279415px 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/MEGA_SPHERE_Illustration.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+/* loading screen */
+body:before {
+    content: " ";
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    background-image: url('img/Thunderbolt_Entertainment_Logo.png');
+    background-color: white;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation: loading 3s ease 0s 1 normal forwards, pop 2s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes loading {
+    0.0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1.05)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.05)
+    }
+}
+
+/* navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    padding: 5px;
+    margin: 0;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 black;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.navbar a:hover {
+    color: white;
+    box-shadow: inset 100px 0 0 0 black;
+}
+
+#main {
+    display: flex;
+    margin: 100px;
+    font-size: xx-large;
+    color: white;
+    align-content: flex-end;
+    text-shadow: var(--grey-shine);
+}
+
+.about {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.about p {
+    padding: 1em 5em;
+    margin: 1em 5em;
+    background-color: #eee;
+}
+
+#clients p {
+    background: none;
+}
+
+/* spans */
+#secret {
+    color: #ddd;
+}
+
+#secret:hover {
+    box-shadow: inset 100px 0 0 0 #ddd;
+    color: white;
+}
+
+#nice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10em;
+}
+
+#nicebox {
+    background-image: url(img/Nice_Arneb_Thunder_CG.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 1em 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 15px 5px;
+}
+
+#quotes {
+    padding: 15px 30px;
+    border-radius: 5px 15px;
+    text-align: left;
+    border: solid 2px white;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-shadow: var(--black-shine);
+}
+
+#quotes:after {
+    content: '\201d';
+    font: 700 40px / 20px Montserrat, serif;
+    padding: 15px 5px -0px;
+    position: relative;
+    right: 0;
+    top: 5px;
+}
+
+#quotes:before {
+    content: '\201c';
+    font: 700 40px / 20px Montserrat, serif;
+    padding: 15px 5px -0px;
+    position: relative;
+    left: 0;
+    top: 1px;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* imgs */
+#logo {
+    filter: drop-shadow(var(--white-shine));
+}

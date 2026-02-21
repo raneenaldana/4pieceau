@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esu's Email</title>
+    <link rel="stylesheet" href="mail.css">
+    <script src="mail.js"></script>
+</head>
+
+<body>
+    <div id="google-logo-row"> <!-- Third nav bar begins here (image, search bar, )-->
+        <img src="img/gmail.png" width="180" height="70" style="padding-left: 10px" alt="gmail-logo">
+
+        <div id="search-bar-top">
+            <input type="text" name="search" placeholder="Search mail" style="width: 20em">
+        </div>
+    </div> <!-- Third nav bar ends here (image, search bar, )-->
+
+    <div id="inbox">
+        <div id="right-tab">
+            <div id="inbox-row">
+                <ul>
+                    <li><button>Compose</button></li>
+                    <br>
+                    <li id="default" onclick="openEmail(event, 'emails')">
+                        Inbox
+                    </li>
+                    <a href="">
+                        <li>Starred</li>
+                    </a>
+                    <a href="">
+                        <li>Sent Mail</li>
+                    </a>
+                    <a href="">
+                        <li>Drafts (2)</li>
+                    </a>
+                    <a href="">
+                        <li>All Mail</li>
+                    </a>
+                    <a href="">
+                        <li>Spam (157)</li>
+                    </a>
+                    <a href="">
+                        <li>Trash</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="left-tab">
+
+            <div id="messages-section">
+                <div id="top-message-navbar"> <!--messages navbar starts here-->
+                    <button>Archive</button>
+                    <button>Report Spam</button>
+                    <button>Delete</button>
+                    <select>
+                        <option>More Actions</option>
+                        <option>Mark as Read</option>
+                        <option>Mark as Unread</option>
+                        <option>Add Star</option>
+                        <option>Remove Star</option>
+                        <option>Mute</option>
+                    </select>
+
+                    <button>Go</button>
+                    <a href="#">Refresh</a>
+
+                    <div id="last">
+                        <p class="page-position"><b>1-50</b> of about <b>90</b></p>
+                        <a href="#">Older ></a>
+
+                    </div>
+                </div> <!-- messages navbar ends here mark, delete, select-->
+
+                <div class="email" id="emails">
+                    <div class="message-row unread emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, 'me-down')">me</a></div>
+                        <div class="second-col">Are you ok?<p class="summary">- Hey Ibuki, I know it’s been pretty long
+                                since we’ve emailed one another, especially with the 
+                            </p>
+                        </div>
+                        <div class="third-col">November 8th</div>
+                    </div>
+
+                    <div class="message-row emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, 'ibuki-tardy')">me, Ibuki</a></div>
+                        <div class="second-col">WHERE ARE YOU?<p class="summary">- IBUKI WHERE HAVE YOU
+                                BEEN?????!!!!!!!!! I couldn’t find you ANYWHERE on c
+                            </p>
+                        </div>
+                        <div class="third-col">September 14th</div>
+                    </div>
+
+                    <div class="message-row emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, 'aira-welcome')">Aira Shiratori</a></div>
+                        <div class="second-col">Welcome to Dream Bloom!<p class="summary">- Dear Esu, Welcome to Dream
+                                Bloom Private Academy!(๑´>᎑<)~* My name i</p>
+                        </div>
+                        <div class="third-col">August 31st</div>
+                    </div>
+
+                    <div class="message-row emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, 'ibuki-acceptance')">Ibuki Taki</a></div>
+                        <div class="second-col">I got accepted!<p class="summary">- Hey Esu! I just got my acceptance
+                                letter! Did you get it? Apparently, we’re gonna go on a 
+                            </p>
+                        </div>
+                        <div class="third-col">August 31st</div>
+                    </div>
+
+                    <div class="message-row emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, 'ymnsk-acceptance')">Dream Bloom Academy</a>
+                        </div>
+                        <div class="second-col">Acceptance<p class="summary">- Greetings, Mr Sagiri, We are pleased to
+                                inform you that you've been accepted to Dream Bl</p>
+                        </div>
+                        <div class="third-col">August 31st</div>
+                    </div>
+
+                    <div class="message-row emaillink">
+                        <input type="checkbox" name="mark">
+                        <div class="first-col"><a onclick="openEmail(event, '4piece-audition')">Thunderbolt
+                                Entertainment</a>
+                        </div>
+                        <div class="second-col">4piece Audition Program<p class="summary">- Dear Esu Sagiri, This is a
+                                letter informing you that your application to join the 4</p>
+                        </div>
+                        <div class="third-col">June 25th</div>
+                    </div>
+                </div>
+
+                <!--Emails-->
+                <div class="email" id="me-down">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">Are you ok?</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/esu.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Esu Sagiri</span> <span class="mail">esusagiri@spri.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">November 8th,
+                                2024</span><br />
+                            <span class="mail">to ibuki</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Hey Ibuki,<br><br>
+
+                                I know it’s been pretty long since we’ve emailed one another, especially with the whole
+                                Megashpere thing.<br><br>
+
+                                Are you ok? I haven’t been seeing you a lot recently, and when I do, you look… normal,
+                                but slightly down. You’re not as easygoing and, as much as I hate to admit it, as much
+                                of a rascal as you used to be. You’re not yourself.<br><br>
+
+                                I tried asking your unitmates, but they didn’t seem to notice anything. I asked Kanna,
+                                but, as usual, he couldn’t tell.<br><br>
+
+                                What’s wrong? Is it about the Megasphere? Akatsuki? OR WAS IT ME? DID I DO
+                                SOMETHING??????<br><br>
+
+                                I know you’re not the sentimental type, but can we talk about it somewhere? How about
+                                the planned spot? I’ll see you there.<br><br>
+
+                                Esu
+
+                                <br />
+                            </span></p>
+                    </div>
+                </div>
+
+                <div class="email" id="ibuki-tardy">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">WHERE ARE YOU?</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/esu.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Esu Sagiri</span> <span class="mail">esusagiri@spri.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">September 14th,
+                                2024</span><br />
+                            <span class="mail">to ibuki</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                IBUKI WHERE HAVE YOU BEEN?????!!!!!!!!!<br><br>
+
+                                I couldn’t find you ANYWHERE on campus!<br><br>
+
+                                I waited for you during lunch time, you didn’t come. I checked your classroom, you
+                                weren’t there. I searched the school, I couldn’t find you. I asked Aira, he said he
+                                didn’t see you. I ASKED MR AKIOMI, HE SAID YOU DIDN’T EVEN COME!!!<br><br>
+
+                                IBUKI WE TALKED ABOUT THIS!!???<br><br>
+
+                                I swear you’re gonna be the end of me one day!
+
+                                <br />
+                            </span></p>
+                        <hr>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/ibuki.jpg" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Ibuki Taki</span> <span class="mail">˂ibukitaki@akatsuki.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">August 31st,
+                                2024</span><br />
+                            <span class="mail">to me</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Typical Esu<br><br>
+
+                                Look, I just wasn’t feeling it today, ok?
+
+                                <br />
+                            </span></p>
+                    </div>
+                </div>
+
+                <div class="email" id="aira-welcome">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">I got accepted!</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/aira.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Aira Shiratori</span> <span
+                                class="mail">˂airashiratori@alkaloid.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">August 31st,
+                                2024</span><br />
+                            <span class="mail">to me</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Dear Esu,<br><br>
+
+                                Welcome to Dream Bloom Private Academy!(๑´>᎑<)~* My name is Aira, and I’ll be your tour
+                                    guide! Can’t wait to meet you next Thursday! Feel free to ask me any questions!ヾ(•̀
+                                    ヮ <)و Whether it’s music-related (I’m quite the music expert myself<(˘ ˘ ˘)>) or
+                                    school-related (no math questions tho (づ_ど))! Have a lovely day! ( ﾉ◕ヮ◕ ) ﾉ *:
+                                    ･ﾟ✧<br><br>
+                                    Aira
+                                    <br />
+                            </span></p>
+                    </div>
+                </div>
+
+                <div class="email" id="ibuki-acceptance">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">I got accepted!</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/ibuki.jpg" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Ibuki Taki</span> <span class="mail">˂ibukitaki@akatsuki.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">August 31st,
+                                2024</span><br />
+                            <span class="mail">to me</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Hey Esu!<br><br>
+
+                                I just got my acceptance letter! Did you get it?<br><br>
+
+                                Apparently, we’re gonna go on a tour with this kid called Aira. I think I’ve heard of
+                                him before, did you? I’m pretty sure he’s an performer, too.<br><br>
+
+                                I just looked at the entry list, there are barely any students in the 1st year course,
+                                man… I wish I were a 2nd year like you. Hey, do you think I still have a chance change
+                                my birthdate? They’ll never notice hehe<br><br>
+
+                                Honestly, I’m not looking forward to high school as much. They say it’s the year you
+                                find yourself and stuff, but I think I’ve already found myself decades ago. I’m honestly
+                                only joining cause you’re coming, too, so expect me to crash in every once in a
+                                while.<br><br>
+
+                                Ibuki Taki<br><br>
+                                <br />
+                            </span></p>
+                        <hr>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/esu.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Esu Sagiri</span> <span class="mail">˂esusagiri@spri.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">August 31st,
+                                2024</span><br />
+                            <span class="mail">to Ibuki</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Hi Ibuki,<br><br>
+
+                                Yes, I got my acceptance letter, too. I actually started FREAKING OUT WHAT DO I DO WHAT
+                                DO I DO WHAT DO I DO. Fuyume had to stop me.<br><br>
+
+                                Yes, I know Aira, he’s an singer in Alkaloid… wait- I just got an email from him OHHH GOD
+                                OHHH GEEZ HOLD ON ILL CHECK IT RQ!<br><br>
+
+                                Okay, so apparently it’s not a big thing, just a sorta “welcome” kind of letter. He
+                                seems quite nice, actually. We can become friends, who knows?<br><br>
+
+                                I checked the entry list, too. There doesn’t seem to be much 2nd years either. In fact,
+                                it almost feels like Aira and I are the only ones. Despite Dream Bloom being, like, the
+                                No.1 performing arts school in town, it seems to be declining as of recently. Especially
+                                with competing schools like Daybreak and COSMIC, but I still think it’s the best option
+                                nonetheless. My father attended this school, and he usually praised it!<br><br>
+
+                                It’s no big issue, next year, Raika and Fuyume will join us, right? And though I may not
+                                catch up, you guys’ll at least be with Kanna the year after!<br><br>
+
+                                AND DON’T YOU DARE <strong>THINK</strong> ABOUT CHANGING YOUR BIRTHDATE! IM SERIOUS! I
+                                DIDNT COME HERE TO
+                                SEE YOU GET IN TROUBLE!!!!!!<br><br>
+
+                                Anywho, you should be more optimistic, people would give up and arm just to be in here
+                                and fail, but we got in! Besides, we’re doing this for Nice, remember? We owe him our
+                                lives, so just do this for him ok?<br><br>
+
+                                (Please, don’t crash my classes, AND DON’T SKIP IM WATCHING YOU!)
+                                <br><br>
+                                <br />
+                            </span></p>
+                    </div>
+                </div>
+
+                <div class="email" id="ymnsk-acceptance">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">Acceptance</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/Yumenosaki_Logo.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Dream Bloom Academy</span> <span
+                                class="mail">˂dreambloomacademy@yumenosaki.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">August 31st,
+                                2024</span><br />
+                            <span class="mail">to me</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                Greetings, Mr. Sagiri,<br><br>
+
+                                We are pleased to inform you that you've been accepted to Dream Bloom Private Academy's
+                                2-A class of the Music Course.<br><br>
+
+                                You will be accompanied on a tour around campus by a fellow 2nd-year, Aira Shiratori,
+                                alongside a new 1st-year pupil, Ibuki Taki, on September 5th, 2024.<br><br>
+
+                                Mr. Shiratori will hand you your student handbooks and schedules, and will show you all
+                                the school facilities that may be of interest. Kindly don't shy away from asking him to
+                                clear any doubts.<br><br>
+
+                                You will start attending on your first day on September 9th, 2024.<br><br>
+
+                                We are looking forward to having you in our academy and can't wait to meet you.<br><br>
+
+                                Social Worker,<br><br>
+
+                                Akiomi Kunugi
+                                <br />
+                            </span></p>
+                    </div>
+                </div>
+
+                <div class="email" id="4piece-audition">
+                    <div class="headerbox">
+                        <p><span class="emailsubject">4piece Audition Program</span>
+
+                            <span class="inbox">Inbox ☓</span>
+                            <img class="iconstop" src="img/window.png" /><img class="iconstop"
+                                src="img/print.png" /><br />
+
+                            <br />
+                        </p>
+                        <p>
+                            <img class="emailicon" !-- Edit icon image here, replace url with your own --
+                                src="img/Thunderbolt_Entertainment_Logo.png" height="40px" width="40px" />
+                        </p>
+                        <p><span class="name">Thunderbolt Entertainment</span> <span
+                                class="mail">˂nicearnebthunder@thunderboltentertainment.com˃</span>
+                            <img class="iconsbot" src="img/more.png" /><img class="iconsbot" src="img/window.png" /><img
+                                class="iconsbot" src="img/star.png" /><span class="emailtime">June 25th,
+                                2024</span><br />
+                            <span class="mail">to me</span><span class="arrowdown">▼</span>
+                        </p>
+
+                        <p><span class="emailbody">
+                                <center><img src="img/4piece_Site_Banner.jpg" /></center><br>
+                                Dear Esu Sagiri,<br><br>
+
+                                This is a letter informing you that your application to join the 4piece Audition
+                                Program, organized by Thunderbolt Entertainment's CEO, Nice Arneb Thunder, has been
+                                accepted and will be held on July 1st, 2024.<br><br>
+
+                                Participants will be divided amongst four venues that will hold audition challenges
+                                simultaneously, with judges to review and score their performance as a competition
+                                between individuals. At the conclusion of the program, one performer from each venue will be
+                                recognized as "special performers" and selected to form a Dream Unit, and will get the chance
+                                to have a special song and MV produced by Mr Nice to kickstart their singing
+                                career.<br><br>
+
+                                The audition program will span over the course of a month in a large dome dedicated to
+                                the audition. The dome will be split into four venues, with a luxury hotel situated in
+                                the middle. The competition encourages participation of all kinds, including
+                                debuted singers, novice singers, and fledgling singers with no singing experience at all.<br><br>
+
+                                Upon entering the venue, you will be provided with an audition outfit, and your personal
+                                belongings and smartphones will be confiscated for the competition.<br><br>
+
+                                You have been assigned to the first piece of the audition, that being the VS★PRINCE
+                                audition challenge, held from July 2nd, 2024, to July 7th, 2024, in the “Prince Castle”
+                                venue.<br><br>
+
+                                You will be competing alongside the following participants:<br><br>
+                                - Mao Isara<br>
+                                - Leo Tsukinaga<br>
+                                - Fuyume Hanamura<br>
+                                - Subaru Akehoshi<br>
+                                - Tsukasa Suou<br><br>
+
+                                We look forward to seeing you compete and wish you the best of luck.<br><br>
+
+                                CEO of Thunderbolt Entertainment,<br><br>
+
+                                Nice Arneb Thunder<br><br>
+
+                                <center><img src="/img/Nice_Arneb_Thunder_CG.png" width="400px" /></center>
+
+                                <br />
+                            </span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>

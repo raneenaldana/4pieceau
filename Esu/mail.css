@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-family: arial;
+    font-size: 14px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+#top-message-navbar {
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#google-logo-row {
+    display: flex;
+}
+
+#search-bar-top {
+    position: relative;
+    top: 35px;
+    padding-left: 10px;
+}
+
+input[type="text"] {
+    background-color: #e9eef6;
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+#small-font {
+    width: 200px;
+    display: inline-block;
+    font-size: 8px;
+}
+
+#inbox {
+    display: inline-flex;
+}
+
+#right-tab {
+    display: inline-block;
+    width: 150px;
+    margin-left: -30px;
+}
+
+#inbox-row button {
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    background-color: #c2e7ff;
+    font-weight: bold;
+}
+
+.label-row {
+    color: green;
+}
+
+#messages-section {
+    display: block;
+    background-color: #c3d9ff;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
+.message-row {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(160, 160, 255);
+    padding: 1px;
+    background-color: #e8eef7;
+    width: auto;
+}
+
+.email {
+    display: none;
+}
+
+.page-position {
+    display: inline-block;
+}
+
+.checkbox,
+.first-col,
+.second-col,
+.third-col,
+.summary {
+    display: inline-block;
+}
+
+.first-col {
+    padding-left: 5px;
+    padding-right: 1px;
+    width: 200px;
+}
+
+
+
+.second-col {
+    padding-left: 10PX;
+    color: blue;
+    width: 650px;
+}
+
+.summary {
+    padding-left: 1PX;
+    color: #7b7bc5;
+    margin: 0;
+}
+
+.third-col {
+    padding-left: 10PX;
+    width: 100px;
+}
+
+#last {
+    display: inline-block;
+    padding-left: 380px;
+}
+
+.unread {
+    background-color: white;
+}
+
+/* email body */
+.headerbox {
+    width: auto;
+    padding: 0.5em;
+    margin: auto;
+}
+
+.emailsubject {
+    font-size: 22px;
+    margin-left: 2.5em;
+}
+
+.inbox {
+    margin: 0 0 8px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 0 2.6666656px 0 4px;
+    background: #cccccc;
+    color: #666666;
+    position: relative;
+    cursor: pointer;
+}
+
+.emailicon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.name {
+    color: #000000;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.mail {
+    color: #5f6368;
+    font-family: arial;
+}
+
+.emailtime {
+    color: #5f6368;
+    font-family: arial;
+    float: right;
+    margin-right: auto;
+}
+
+.tome {
+    color: #5f6368;
+    font-family: arial;
+}
+
+.arrowdown {
+    color: #5f6368;
+    font-size: 12px;
+    font-family: arial;
+    cursor: pointer;
+}
+
+.iconstop {
+    float: right;
+    margin-right: auto;
+    max-width: 75px;
+    cursor: pointer;
+}
+
+.iconsbot {
+    float: right;
+    max-width: 135px;
+    cursor: pointer;
+}
+
+.imgheader {
+    width: 841px;
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+.emailbody {
+    display: block;
+    font-family: arial;
+    width: 841px;
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+.emailbody ul {
+    list-style-type: disc;
+}

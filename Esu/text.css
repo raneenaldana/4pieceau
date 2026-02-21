@@ -1,0 +1,208 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+position: relative;
+width: 283px;
+height: 500px;
+border: 14px #5460F0 solid;
+border-top-width: 60px;
+border-bottom-width: 60px;
+border-radius: 36px;
+}
+
+.phone:before {
+content: "";
+display: block;
+width: 60px;
+height: 5px;
+position: absolute;
+top: -30px;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #3A53CD;
+border-radius: 10px;
+}
+ 
+.phone:after {
+content: "";
+display: block;
+width: 35px;
+height: 35px;
+position: absolute;
+left: 50%;
+bottom: -65px;
+transform: translate(-50%, -50%);
+background: #5460F0;
+border-radius: 50%;
+box-shadow: inset 13px 0px 6px -10px #3A53CDAD, inset -13px 0px 6px -10px #3A53CDAD, inset 0px 13px 6px -10px #3A53CDAD, inset 0px -13px 6px -10px #3A53CDAD;
+}
+
+.phone .screen {
+width: 100%;
+height: 100%;
+box-shadow: inset 11px 0px 6px -10px #42424260, inset -11px 0px 6px -10px #42424260, inset 0px 11px 6px -10px #42424260, inset 0px -11px 6px -10px #42424260;
+}
+
+.container {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    border: 1px solid #ededed;
+}
+
+.header {
+    max-height: 70px;
+    margin-top: 0px;
+    padding: 2px 5px 2px 15px;
+    color: #434343;
+    background: #f5f5f5;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #ededed;
+}
+
+.headerimg {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.chat-box {
+    margin: auto;
+    float: none;
+    padding: 1em 1em 1em 1em;
+    font-size: small;
+    color: #000000;
+    overflow: auto;
+    height: 355px;
+    overflow-y: auto;
+}
+
+.text {
+    float: left;
+    color: #000000;
+    margin: 0 0 0.5em;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    background: #e5e5ea;
+    max-width: 75%;
+    clear: both;
+    position: relative;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    left: -.5em;
+    bottom: 0;
+    width: 0.5em;
+    height: 1em;
+    border-right: 0.5em solid #e5e5ea;
+    border-bottom-right-radius: 1em 0.5em;
+}
+
+.reply {
+    float: right;
+    color: #FFFFFF;
+    margin: 0 0 0.5em;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    background: #1e319a;
+    max-width: 75%;
+    clear: both;
+    position: relative;
+}
+
+.reply::after {
+    content: "";
+    position: absolute;
+    right: -0.5em;
+    bottom: 0;
+    width: 0.5em;
+    height: 1em;
+    border-left: 0.5em solid #1e319a;
+    border-bottom-left-radius: 1em 0.5em;
+}
+
+.hide {
+    display: none;
+}
+
+.footer .footer-message {
+    content: "iMessage";
+    float: right;
+    margin-right: 2px;
+    margin-top: 2px;
+    width: 250px;
+    padding: 5px;
+    color: #cfcfc6;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #c5c5c6;
+    background: #fff;
+    max-height: 20px;
+    font-size: 12px;
+}
+
+.footer .footer-circle {
+    content: "+";
+    float: left;
+    margin-left: 2px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    color: #7e7f85;
+    background: #e8e9eb;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #e8e9eb;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer .footer-message {
+    display: inline-block;
+}
+
+.footer .footer-circle {
+    display: inline-block;
+}
+
+.footer {
+    background: #fff;
+    max-height: 20px;
+    margin: 5px;
+    color: #c5c5c6;
+    overflow: hidden;
+    display: block;
+    float: none;
+    padding: 0px 1em 1em 1em;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #DCDCE2;
+    border-radius: 4px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #DCDCE2;
+}
